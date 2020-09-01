@@ -1,0 +1,35 @@
+.steps {
+    font-size: 38px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 50px 0 40px 0;
+}
+
+.nextStep {
+    height: 33vh;
+    width: 98.8vw;
+    background-color: #F0F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #3C3C3C;
+    margin: 0 5vw;
+}
+
+.step__title {
+    font-size: 18px;
+    margin-top: 8px;
+    padding-bottom: 20px;
+
+}

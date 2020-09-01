@@ -11,11 +11,13 @@ const GoHelp = () => {
         <img className="goHelp__img" src={Decoration} alt="Decoration" />
       </div>
       <div className="goHelp__btn">
-        <Link className="goHelp__btn-style">
+        <Link to="/logowanie" className="goHelp__btn-style">
           <p>ODDAJ</p>
           <p>RZECZY</p>
         </Link>
-        <Link className="goHelp__btn-style">ZORGANIZUJ ZBIÓRKĘ</Link>
+        <Link to="logowanie" className="goHelp__btn-style">
+          ZORGANIZUJ ZBIÓRKĘ
+        </Link>
       </div>
     </div>
   );
