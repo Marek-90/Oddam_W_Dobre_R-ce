@@ -1,6 +1,7 @@
 import React from "react";
 import Decoration from "../../assets/Decoration.svg";
 import NextStep from "./NextStep";
+import StepBtn from "./StepBtn";
 
 const Steps = () => {
   return (
@@ -10,6 +11,7 @@ const Steps = () => {
         <img className="goHelp__img" src={Decoration} alt="Decoration" />
       </div>
       <NextStep />
+      <StepBtn />
     </>
   );
 };
