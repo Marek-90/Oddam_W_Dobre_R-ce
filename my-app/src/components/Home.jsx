@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header/Header";
 
 const Home = () => {
-  return (
-    <>
-      <h1>Hello!</h1>
-    </>
-  );
+  return <Header />;
 };
 
 export default Home;
