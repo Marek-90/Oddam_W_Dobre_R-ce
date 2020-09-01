@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
   return (
@@ -8,7 +8,12 @@ const Navigation = () => {
         <Link className="navigation__nav">
           <li>Start</li>
         </Link>
-        <Link className="navigation__nav">
+        <Link
+          className="navigation__nav"
+          to="steps1"
+          smooth={true}
+          duration={1000}
+        >
           <li>O co chodzi?</li>
         </Link>
         <Link className="navigation__nav">

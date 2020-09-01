@@ -6,7 +6,7 @@ import StepBtn from "./StepBtn";
 const Steps = () => {
   return (
     <>
-      <div className="steps">
+      <div className="steps" id="steps1">
         <h2>Wystarczą 4 proste kroki</h2>
         <img className="goHelp__img" src={Decoration} alt="Decoration" />
       </div>
