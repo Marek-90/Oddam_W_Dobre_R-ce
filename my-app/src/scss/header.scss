@@ -63,6 +63,7 @@
 .goHelp {
     margin-top: 15.3vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -85,6 +86,24 @@
 }
 
 .goHelp__btn {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 66px;
+}
+
+.goHelp__btn-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: 300;
+    color: #3C3C3C;
+    border: 0.75px solid #3C3C3C;
+    text-align: center;
+    width: 16.1vw;
+    height: 12.3vh;
+
+
 }

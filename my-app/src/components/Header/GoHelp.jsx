@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Decoration from "../../assets/Decoration.svg";
 
 const GoHelp = () => {
@@ -8,10 +9,13 @@ const GoHelp = () => {
         <p>Zacznij pomagać!</p>
         <p>Oddaj niechciane rzeczy w zaufane ręce</p>
         <img className="goHelp__img" src={Decoration} alt="Decoration" />
-        <div className="goHelp__btn">
-          <button>ODDAJ RZECZY</button>
-          <button>ZORGANIZUJ ZBIÓRKĘ</button>
-        </div>
+      </div>
+      <div className="goHelp__btn">
+        <Link className="goHelp__btn-style">
+          <p>ODDAJ</p>
+          <p>RZECZY</p>
+        </Link>
+        <Link className="goHelp__btn-style">ZORGANIZUJ ZBIÓRKĘ</Link>
       </div>
     </div>
   );
