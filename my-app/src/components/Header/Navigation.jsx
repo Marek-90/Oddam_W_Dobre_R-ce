@@ -32,7 +32,12 @@ const Navigation = () => {
         >
           <li>Fundacje i organizacje</li>
         </Link>
-        <Link className="navigation__nav">
+        <Link
+          className="navigation__nav"
+          to="contact"
+          smooth={true}
+          duration={1500}
+        >
           <li>Kontakt</li>
         </Link>
       </ul>
