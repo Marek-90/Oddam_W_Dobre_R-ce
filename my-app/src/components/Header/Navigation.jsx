@@ -12,14 +12,24 @@ const Navigation = () => {
           className="navigation__nav"
           to="steps1"
           smooth={true}
-          duration={1000}
+          duration={1500}
         >
           <li>O co chodzi?</li>
         </Link>
-        <Link className="navigation__nav">
+        <Link
+          className="navigation__nav"
+          to="abautUs"
+          smooth={true}
+          duration={1500}
+        >
           <li>O nas</li>
         </Link>
-        <Link className="navigation__nav">
+        <Link
+          className="navigation__nav"
+          to="whoWeHelp"
+          smooth={true}
+          duration={1500}
+        >
           <li>Fundacje i organizacje</li>
         </Link>
         <Link className="navigation__nav">

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Header from "./Header/Header";
 import Statistics from "./Statistics/Statistics";
 import Steps from "./Steps/Steps";
 import AboutUs from "./AboutUs/AboutUs";
+import WhoWeHelp from "./ WhoWeHelp/WhoWeHelp";
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
       <Statistics />
       <Steps />
       <AboutUs />
+      <WhoWeHelp />
     </>
   );
 };

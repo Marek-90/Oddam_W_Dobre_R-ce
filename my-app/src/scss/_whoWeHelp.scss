@@ -1,0 +1,40 @@
+.whoWeHelp {
+    margin: 7.15vh 0 7.17vh 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 39px;
+    letter-spacing: -0.76px;
+    color: #3C3C3C;
+}
+
+.whoWeHelpBtn {
+    font-family: $font-base;
+    font-size: 24px;
+    color: #3C3C3C;
+    margin: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.whoWeHelpBtn__style {
+    height: 40px;
+    width: 10rem;
+    border: 1px solid white;
+    color: #3C3C3C;
+    margin: 2rem;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        border: 1px solid #3C3C3C;
+    }
+
+}
