@@ -1,1 +1,13 @@
-$color: #F0F1F1 #5E5322 #FAD648 #737373 #3C3C3C
+$color: #F0F1F1 #5E5322 #FAD648 #737373 #3C3C3C;
+
+::placeholder {
+    color: #3C3C3C26;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
