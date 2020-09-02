@@ -10,6 +10,9 @@ const ContactForm = () => {
       <img className="goHelp__img" src={Decoration} alt="Decoration" />
       <Person />
       <Message />
+      <div className="contact__btn-position">
+        <button className="contact__btn">Wyślij</button>
+      </div>
     </div>
   );
 };

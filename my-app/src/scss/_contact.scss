@@ -59,14 +59,7 @@
     }
 }
 
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: $font-base;
-    font-size: 18px;
-    color: #3C3C3C;
-}
+
 
 input {
     border-top: none;
@@ -75,4 +68,46 @@ input {
     width: 14vw;
     font-family: $font-base;
     font-size: 18px;
+}
+
+.contact__btn {
+    font-family: $font-base;
+    font-size: 18px;
+    background: none;
+    margin-top: 4vh;
+    width: 8vw;
+    height: 6vh;
+    border: 1px solid #3C3C3C;
+}
+
+.contact__btn-position {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button:focus {
+    outline: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // justify-content: center;
+    font-family: $font-base;
+    font-size: 18px;
+    color: #3C3C3C;
+}
+
+.footer__img1 {
+    position: absolute;
+    right: 9vw;
+    transform: translate(0, -50%);
+}
+
+.footer__img2 {
+    position: absolute;
+    right: 6.4vw;
+    transform: translate(0, -50%);
 }

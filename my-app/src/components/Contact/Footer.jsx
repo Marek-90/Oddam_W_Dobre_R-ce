@@ -8,8 +8,10 @@ const Footer = () => {
       <div></div>
       <div>Copyright by Coders Lab</div>
       <div>
-        <img src={Fb} alt="facebook" />
-        <img src={Ins} alt="instagram" />
+        <div>
+          <img className="footer__img1" src={Fb} alt="facebook" />
+          <img className="footer__img2" src={Ins} alt="instagram" />
+        </div>
       </div>
     </div>
   );
