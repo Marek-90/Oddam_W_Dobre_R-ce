@@ -10,10 +10,8 @@
 }
 
 .whoWeHelpBtn {
-    font-family: $font-base;
-    font-size: 24px;
-    color: #3C3C3C;
-    margin: 62px;
+
+    margin: 62px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,19 +19,24 @@
 }
 
 .whoWeHelpBtn__style {
-    height: 40px;
-    width: 10rem;
+    height: 10vh;
+    width: 10vw;
     border: 1px solid white;
+    font-family: $font-base;
+    font-size: 24px;
     color: #3C3C3C;
-    margin: 2rem;
-    text-align: center;
-    padding: 20px;
+    background: none;
+    margin: 20px 40px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     &:hover {
+        border: 1px solid #3C3C3C;
+    }
+
+    &:focus {
         border: 1px solid #3C3C3C;
     }
 

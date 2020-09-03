@@ -3,13 +3,13 @@ import Foundations from "./Foundations";
 import Organizations from "./Organizations";
 import Collections from "./Collections";
 
-const Active = {
-  fundactions: "fundations",
-  organizacions: "organizacions",
-  collections: "collections",
-};
-
 const WhoWeHelpBtn = () => {
+  const Active = {
+    fundactions: "fundations",
+    organizacions: "organizacions",
+    collections: "collections",
+  };
+
   const [activeBoard, setActiveBoard] = useState(Active.fundactions);
 
   const handleClick = (toogle) => {
