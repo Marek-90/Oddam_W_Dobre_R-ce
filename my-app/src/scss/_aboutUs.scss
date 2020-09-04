@@ -1,16 +1,19 @@
 .aboutUs {
-    margin-top: 80px;
+    width: 98.8vw;
+    height: 100vh;
+    margin-top: 11.46vh;
     display: flex;
 }
 
 .aboutUs__img {
-    height: 80vh;
+    height: 100vh;
     width: 50vw;
-    background-position: right;
+    background-position: cover;
 }
 
 .aboutText {
-    width: 100%;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +23,7 @@
 
 .aboutText__title {
     font-family: $font-base;
-    font-size: 38px;
+    font-size: 2.375em;
     font-weight: 400;
     color: #3C3C3C;
     margin-bottom: 40px;
@@ -29,7 +32,7 @@
 .aboutText__text {
     margin-top: 62px;
     font-family: $font-base;
-    font-size: 30px;
+    font-size: 1.87em;
     font-weight: 400;
     color: #3C3C3C;
     letter-spacing: -0.76px;
@@ -39,6 +42,8 @@
 }
 
 .aboutText__signature {
-    margin-top: 40px;
+    margin-top: 5.7vh;
     margin-left: 30vw;
+
+
 }

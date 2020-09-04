@@ -78,12 +78,14 @@ input {
     width: 8vw;
     height: 6vh;
     border: 1px solid #3C3C3C;
+    cursor: pointer;
 }
 
 .contact__btn-position {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
 }
 
 button:focus {
