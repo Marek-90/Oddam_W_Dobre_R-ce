@@ -6,7 +6,7 @@ const StepFour = () => {
   return (
     <>
       <Link to="/logowanie" className="stepOne">
-        <img src={Icon4} alt="icon4" />
+        <img className="step__img-size" src={Icon4} alt="icon4" />
         <p className="step__title">Zamów kuriera</p>
         <p>kurier przyjedzie</p>
         <p>w dogodnym terminie</p>

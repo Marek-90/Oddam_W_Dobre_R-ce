@@ -14,7 +14,7 @@
 .navLog {
     display: flex;
     flex-direction: column;
-    margin: 5.3vh 4vw 0 0;
+    margin: 2vh 4vw 0 0;
 
 }
 
@@ -56,7 +56,7 @@
     align-items: center;
     text-align: center;
     color: #3C3C3C;
-    margin: 1.3vh 0 1.3vh 4.3vw;
+    margin: 1vh 0 1.3vh 4.3vw;
     border: 0.11vh solid white;
 
     &:hover {
@@ -80,7 +80,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    letter-spacing: -0.76px;
+    letter-spacing: -0.11vh;
     font-family: $font-base;
     text-align: center;
     color: #3C3C3C;
@@ -95,7 +95,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 66px;
+    margin-top: 9.4vh;
 }
 
 .goHelp__btn-style {
@@ -104,7 +104,7 @@
     justify-content: center;
     flex-direction: column;
     font-family: $font-base;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 300;
     color: #3C3C3C;
     border: 0.75px solid #3C3C3C;

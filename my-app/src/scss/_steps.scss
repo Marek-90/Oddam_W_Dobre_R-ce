@@ -1,15 +1,16 @@
 .steps {
-    font-size: 38px;
+    font-family: $font-base;
+    font-size: 2.375rem;
     font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin: 50px 0 40px 0;
+    margin: 7.16vh 0 5.73vh 0;
 }
 
 .nextStep {
-    height: 33vh;
+    height: 38vh;
     width: 98.8vw;
     background-color: #F0F1F1;
     display: flex;
@@ -22,14 +23,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-family: $font-base;
+    font-size: 1rem;
     color: #3C3C3C;
     margin: 0 5vw;
 }
 
 .step__title {
-    font-size: 18px;
-    margin-top: 8px;
+    font-size: 1.125rem;
+    margin-top: 1.14vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,8 +39,45 @@
     &::after {
         display: inline-block;
         content: "";
-        border-bottom: 1px solid #3C3C3C;
+        border-bottom: 0.14vh solid #3C3C3C;
         width: 3.5vw;
-        margin: 10px 0;
+        margin: 1.43vh 0;
     }
+
+}
+
+#root>div.nextStep>a>p:nth-child(3) {
+    font-size: 1rem;
+}
+
+#root>div.nextStep>a>p:nth-child(4) {
+    font-size: 1rem;
+}
+
+.step__img-size {
+    width: 6.5vw;
+    height: 11.9vh;
+}
+
+.stepBtn {
+    height: 15.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.stepBtn__btn {
+    margin: 5vh 0;
+    font-family: $font-base;
+    font-size: 2.25rem;
+    font-weight: 200;
+    color: #3C3C3C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.107vh solid #3C3C3C;
+    width: 16vw;
+    height: 12vh;
 }

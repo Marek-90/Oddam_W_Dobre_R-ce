@@ -6,7 +6,7 @@ const StepThree = () => {
   return (
     <>
       <Link to="/logowanie" className="stepOne">
-        <img src={Icon3} alt="icon3" />
+        <img className="step__img-size" src={Icon3} alt="icon3" />
         <p className="step__title">
           <p>Zdecyduj komu</p>
           <p> chcesz pomóc</p>

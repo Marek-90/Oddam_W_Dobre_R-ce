@@ -4,14 +4,14 @@
     flex-direction: column;
     text-align: center;
     font-family: $font-base;
-    font-size: 39px;
-    letter-spacing: -0.76px;
+    font-size: 2.4375rem;
+    letter-spacing: -0.11vh;
     color: #3C3C3C;
 }
 
 .whoWeHelpBtn {
 
-    margin: 62px 0;
+    margin: 8.9vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,23 +21,23 @@
 .whoWeHelpBtn__style {
     height: 10vh;
     width: 15vw;
-    border: 1px solid white;
+    border: 0.14vh solid white;
     font-family: $font-base;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #3C3C3C;
     background: none;
-    margin: 20px 40px;
+    margin: 2.7vh 3.1vw;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 
     &:hover {
-        border: 1px solid #3C3C3C;
+        border: 0.14vh solid #3C3C3C;
     }
 
     &:focus {
-        border: 1px solid #3C3C3C;
+        border: 0.14vh solid #3C3C3C;
     }
 
 }
@@ -53,8 +53,7 @@
 
 .foundations__text,
 .organizations__text,
-.collections__text,
-    {
+.collections__text {
     width: 50vw;
     text-align: center;
     font-family: $font-base;
