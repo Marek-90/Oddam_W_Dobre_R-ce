@@ -6,7 +6,6 @@ const Foundations = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [pageNumber, setPageNumber] = useState(0);
-
   const [pending, setPending] = useState(false);
 
   useEffect(() => {
@@ -37,7 +36,14 @@ const Foundations = () => {
   const listItem =
     data.length > 0 ? (
       data.slice(3 * page - 3, 3 * page).map((el, i) => {
-        return <li key={i}>{el.Name}</li>;
+        return (
+          <li key={i}>
+            Fundacja {el.Name}
+            {el.Needs}
+            Cel i misja: {el.Goal}
+            {}
+          </li>
+        );
       })
     ) : (
       <>
