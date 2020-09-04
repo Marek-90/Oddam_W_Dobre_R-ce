@@ -2,12 +2,11 @@ import React from "react";
 
 const Organizations = () => {
   return (
-    <div>
-      <div>
+    <div className="organizations">
+      <div className="organizations__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugiat
-        exercitationem alias distinctio, doloribus eveniet ipsa dicta. Iste
-        corrupti, exercitationem explicabo nisi hic assumenda veniam debitis
-        aliquam sed nulla rerum?
+        exercitationem alias distinctio, doloribus eveniet ipsa dicta. aliquam
+        sed nulla rerum?
       </div>
     </div>
   );

@@ -41,3 +41,23 @@
     }
 
 }
+
+.foundations,
+.organizations,
+.collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foundations__text,
+.organizations__text,
+.collections__text,
+    {
+    width: 50vw;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 1.375rem;
+    color: #3C3C3C;
+}
