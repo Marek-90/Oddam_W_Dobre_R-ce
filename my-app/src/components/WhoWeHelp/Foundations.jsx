@@ -38,10 +38,11 @@ const Foundations = () => {
       data.slice(3 * page - 3, 3 * page).map((el, i) => {
         return (
           <li key={i}>
-            Fundacja {el.Name}
-            {el.Needs}
-            Cel i misja: {el.Goal}
-            {}
+            <div className="col-poz">
+              <p>Fundacja {el.Name}</p>
+              <p>{el.Needs}</p>
+            </div>
+            <p className="col-poz-next">Cel i misja: {el.Goal}</p>
           </li>
         );
       })

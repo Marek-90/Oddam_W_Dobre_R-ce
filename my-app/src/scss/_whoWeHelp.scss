@@ -48,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -59,4 +60,22 @@
     font-family: $font-base;
     font-size: 1.375rem;
     color: #3C3C3C;
+}
+
+.col-poz {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-alt;
+    font-weight: 200;
+    font-size: 1.625rem;
+    color: #3C3C3C;
+}
+
+.col-poz-next {
+    font-family: $font-alt;
+    font-weight: 200;
+    font-size: 1.125rem;
+    color: #3C3C3C;
+    text-align: left;
 }
