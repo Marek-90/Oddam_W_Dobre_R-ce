@@ -4,13 +4,7 @@ import Organizations from "./Organizations";
 import Collections from "./Collections";
 
 const WhoWeHelpBtn = () => {
-  const Active = {
-    fundactions: "fundations",
-    organizacions: "organizacions",
-    collections: "collections",
-  };
-
-  const [activeBoard, setActiveBoard] = useState(Active.fundactions);
+  const [activeBoard, setActiveBoard] = useState("fundactions");
 
   const handleClick = (toogle) => {
     setActiveBoard(toogle);
@@ -18,11 +12,11 @@ const WhoWeHelpBtn = () => {
 
   const switchContent = () => {
     switch (activeBoard) {
-      case Active.fundactions:
+      case "fundactions":
         return <Foundations />;
-      case Active.organizacions:
+      case "organizacions":
         return <Organizations />;
-      case Active.collections:
+      case "collections":
         return <Collections />;
       default:
         return null;
@@ -33,19 +27,19 @@ const WhoWeHelpBtn = () => {
     <>
       <div className="whoWeHelpBtn">
         <button
-          onClick={() => handleClick(Active.fundactions)}
+          onClick={() => handleClick("fundactions")}
           className="whoWeHelpBtn__style"
         >
           Fundacjom
         </button>
         <button
-          onClick={() => handleClick(Active.organizacions)}
+          onClick={() => handleClick("organizacions")}
           className="whoWeHelpBtn__style"
         >
           Organizacom pozarządowym
         </button>
         <button
-          onClick={() => handleClick(Active.collections)}
+          onClick={() => handleClick("collections")}
           className="whoWeHelpBtn__style"
         >
           Lokalnym zbiórkom
