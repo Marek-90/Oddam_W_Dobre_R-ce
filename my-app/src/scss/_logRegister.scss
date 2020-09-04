@@ -1,0 +1,45 @@
+.logForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 98.8vw;
+    height: 100vh;
+}
+
+.logForm__title {
+    font-family: $font-base;
+    font-size: 2.375rem;
+    color: #3C3C3C;
+    margin: 7vh 0 3vh 0;
+}
+
+.logFormInput {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+    font-family: $font-base;
+    font-size: 1rem;
+    background-color: #F0F1F1;
+    color: #3C3C3C;
+
+    input {
+        background: none;
+    }
+}
+
+.logFormInput__input {
+    margin-top: 4vh;
+    left: 0;
+}
+
+.logForm__btn {
+    width: 53vw;
+    display: flex;
+    justify-content: space-around;
+    font-family: $font-base;
+    color: #3C3C3C;
+
+}
