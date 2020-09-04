@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as LinkRout } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <div>
       <ul className="navigation">
-        <Link className="navigation__nav">
+        <LinkRout to="/" className="navigation__nav">
           <li>Start</li>
-        </Link>
+        </LinkRout>
         <Link
           className="navigation__nav"
           to="steps1"
