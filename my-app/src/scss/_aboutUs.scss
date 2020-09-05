@@ -3,23 +3,24 @@
     height: 100vh;
     margin-top: 11.46vh;
     display: flex;
-}
 
-.aboutUs__img {
-    height: 100vh;
-    width: 50vw;
-    background-position: cover;
 }
 
 .aboutText {
-    width: 50vw;
+    // width: 50vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F0F1F1;
+
 }
+
+.aboutUs__img {
+    overflow: hidden;
+}
+
 
 .aboutText__title {
     font-family: $font-base;
@@ -42,8 +43,8 @@
 }
 
 .aboutText__signature {
+    width: 16vw;
+    height: 21vh;
     margin-top: 5.7vh;
     margin-left: 30vw;
-
-
 }
