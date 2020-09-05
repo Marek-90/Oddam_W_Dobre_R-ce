@@ -50,6 +50,15 @@
     align-items: center;
     flex-direction: column;
 
+    &>ul>li:nth-child(2)>div {
+        padding-top: 4vh;
+        border-top: 1px solid #3C3C3C;
+    }
+
+    &>ul>li:nth-child(2)>p {
+        padding-bottom: 4vh;
+        border-bottom: 1px solid #3C3C3C;
+    }
 }
 
 .foundations__text,
@@ -70,6 +79,11 @@
     font-weight: 200;
     font-size: 1.625rem;
     color: #3C3C3C;
+    margin: 4vh 0 0.8vh 0;
+
+    &>p:nth-child(2) {
+        font-size: 1.125rem;
+    }
 }
 
 .col-poz-next {
@@ -78,4 +92,5 @@
     font-size: 1.125rem;
     color: #3C3C3C;
     text-align: left;
+    margin: 0.8vh 0 4vh 0;
 }
