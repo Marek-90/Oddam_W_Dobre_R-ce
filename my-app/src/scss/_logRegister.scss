@@ -15,6 +15,14 @@
             border: 1px solid #3c3c3c;
         }
     }
+    & > div:nth-child(4) > div > a {
+        font-family: $font-base;
+        color: #3c3c3c;
+        border: 1px solid white;
+        &:hover {
+            border: 1px solid #3c3c3c;
+        }
+    }
 }
 
 .logForm__title {
