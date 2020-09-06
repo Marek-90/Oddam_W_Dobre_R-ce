@@ -4,12 +4,23 @@
     flex-direction: column;
     width: 98.8vw;
     height: 100vh;
+
+    & > div:nth-child(4) > div > button {
+        background: none;
+        border: 1px solid white;
+        font-family: $font-base;
+        color: #3c3c3c;
+
+        &:hover {
+            border: 1px solid #3c3c3c;
+        }
+    }
 }
 
 .logForm__title {
     font-family: $font-base;
     font-size: 2.375rem;
-    color: #3C3C3C;
+    color: #3c3c3c;
     margin: 7vh 0 3vh 0;
 }
 
@@ -22,8 +33,8 @@
     margin-top: 4vh;
     font-family: $font-base;
     font-size: 1rem;
-    background-color: #F0F1F1;
-    color: #3C3C3C;
+    background-color: #f0f1f1;
+    color: #3c3c3c;
 
     input {
         background: none;
@@ -40,6 +51,5 @@
     display: flex;
     justify-content: space-around;
     font-family: $font-base;
-    color: #3C3C3C;
-
+    color: #3c3c3c;
 }
