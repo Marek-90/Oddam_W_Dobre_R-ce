@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   width: 98.8vw;
-  height: 100vh;
+  height: 70%;
 
   & > div:nth-child(4) > div > button {
     background: none;
@@ -68,4 +68,22 @@
   justify-content: space-around;
   font-family: $font-base;
   color: #3c3c3c;
+  margin-bottom: 4.2vh;
+}
+
+.logRegInput {
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+  font-family: $font-base;
+  font-size: 1rem;
+  background-color: #f0f1f1;
+  color: #3c3c3c;
+
+  input {
+    background: none;
+  }
 }

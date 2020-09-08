@@ -1,22 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogFormInput from "./LogFormInput";
+import RegisterInput from "./RegisterInput";
 import Decoration from "../../assets/Decoration.svg";
 
-const LogForm = () => {
+const Register = () => {
   return (
     <div className="logForm">
-      <h1 className="logForm__title">Zaloguj się</h1>
+      <h1 className="logForm__title">Załóż konto</h1>
       <img className="goHelp__img" src={Decoration} alt="Decoration" />
-      <LogFormInput />
+      <RegisterInput />
       <div>
         <div className="logForm__btn">
-          <button>Zaloguj się</button>
-          <Link to="/rejestracja">Załóż konto</Link>
+          <Link to="/logowanie">Zaloguj się</Link>
+          <button>Załóż konto</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default LogForm;
+export default Register;
