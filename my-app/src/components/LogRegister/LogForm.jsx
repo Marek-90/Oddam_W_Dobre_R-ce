@@ -11,7 +11,7 @@ const LogForm = () => {
       <LogFormInput />
       <div>
         <div className="logForm__btn">
-          <Link to="rejestracja">Załóż konto</Link>
+          <Link to="/rejestracja">Załóż konto</Link>
           <button>Zaloguj się</button>
         </div>
       </div>
