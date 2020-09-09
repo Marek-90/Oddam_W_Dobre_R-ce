@@ -49,7 +49,7 @@ const Foundations = () => {
       })
     ) : (
       <>
-        <li>Brak organizacji w bazie danych</li>
+        <li>Brak fundacji w bazie danych</li>
       </>
     );
 
