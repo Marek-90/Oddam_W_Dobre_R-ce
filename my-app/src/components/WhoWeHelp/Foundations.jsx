@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Pagination from "@material-ui/lab/Pagination";
 import app from "../../Config/config";
+import Loading from "../Loading";
 
 const Foundations = () => {
   const [data, setData] = useState([]);
@@ -60,7 +61,13 @@ const Foundations = () => {
         potrzebują.
       </div>
       <ul>
-        {pending ? <h1>ZARA BEDZIE</h1> : listItem}
+        {pending ? (
+          <h1>
+            <Loading />
+          </h1>
+        ) : (
+          listItem
+        )}
         {data.length > 3 ? (
           <Pagination count={pageNumber} page={page} onChange={handleChange} />
         ) : null}
