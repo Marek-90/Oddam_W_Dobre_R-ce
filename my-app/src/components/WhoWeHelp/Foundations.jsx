@@ -39,7 +39,7 @@ const Foundations = () => {
         return (
           <li key={i}>
             <div className="col-poz">
-              <p>Fundacja {el.Name}</p>
+              <p>Fundacja "{el.Name}"</p>
               <p>{el.Needs}</p>
             </div>
             <p className="col-poz-next">Cel i misja: {el.Goal}</p>
