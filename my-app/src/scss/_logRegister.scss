@@ -5,7 +5,7 @@
   width: 98.8vw;
   height: 70%;
 
-  & > div:nth-child(4) > div > button {
+  &>div:nth-child(4)>div>button {
     background: none;
     border: 1px solid white;
     font-family: $font-base;
@@ -19,7 +19,8 @@
       border: 1px solid #000000;
     }
   }
-  & > div:nth-child(4) > div > a {
+
+  &>div:nth-child(4)>div>a {
     font-family: $font-base;
     color: #000000;
     border: 1px solid white;
@@ -27,6 +28,7 @@
     margin-top: 7.16vh;
     padding: 1.4vh 0.8vw;
     cursor: pointer;
+
     &:hover {
       border: 1px solid #000000;
     }
@@ -97,8 +99,21 @@
 }
 
 .logOut__title {
+  width: 30%;
+  text-align: center;
   font-family: $font-base;
   font-size: 2.375rem;
   color: #3c3c3c;
+  letter-spacing: -0.8px;
+  line-height: 7.9vh;
   margin: 7vh 0 3vh 0;
+}
+
+.logOut__btn {
+  margin-top: 5%;
+  border: 0.1vh solid #3c3c3c;
+  font-family: $font-base;
+  font-size: 1.125rem;
+  color: #000000;
+  padding: 3vh 1vw;
 }
