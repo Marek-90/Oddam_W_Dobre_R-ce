@@ -87,3 +87,18 @@
     background: none;
   }
 }
+
+.logOut {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+}
+
+.logOut__title {
+  font-family: $font-base;
+  font-size: 2.375rem;
+  color: #3c3c3c;
+  margin: 7vh 0 3vh 0;
+}
