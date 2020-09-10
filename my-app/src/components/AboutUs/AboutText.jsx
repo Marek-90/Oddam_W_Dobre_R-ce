@@ -16,4 +16,5 @@ const AboutText = () => {
     </div>
   );
 };
+
 export default AboutText;

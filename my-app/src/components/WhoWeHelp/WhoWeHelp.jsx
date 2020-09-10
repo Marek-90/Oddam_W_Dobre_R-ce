@@ -11,4 +11,5 @@ const WhoWeHelp = () => {
     </div>
   );
 };
+
 export default WhoWeHelp;

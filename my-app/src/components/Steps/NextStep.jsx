@@ -14,4 +14,5 @@ const NextStep = () => {
     </div>
   );
 };
+
 export default NextStep;

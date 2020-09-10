@@ -11,11 +11,8 @@ const Message = () => {
         rows="10"
         placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nesciunt placeat veritatis deserunt voluptatibus. Voluptates aliquid autem sit labore quos consectetur debitis illo perferendis pariatur hic, delectus aperiam provident quaerat quibusdam enim"
       ></textarea>
-      {/* <input
-        type="text"
-        placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nesciunt placeat veritatis deserunt voluptatibus. Voluptates aliquid autem sit labore quos consectetur debitis illo perferendis pariatur hic, delectus aperiam provident quaerat quibusdam enim praesentium commodi eius. Vitae ipsam dicta pariatur officiis!"
-      /> */}
     </div>
   );
 };
+
 export default Message;

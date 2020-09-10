@@ -10,4 +10,5 @@ const LogFormInput = () => {
     </div>
   );
 };
+
 export default LogFormInput;

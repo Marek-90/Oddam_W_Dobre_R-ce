@@ -75,4 +75,5 @@ const Collections = () => {
     </div>
   );
 };
+
 export default Collections;
