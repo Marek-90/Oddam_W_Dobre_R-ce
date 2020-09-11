@@ -1,10 +1,11 @@
 import React from "react";
 
-const Message = () => {
+const Message = ({ updateFieled }) => {
   return (
     <div className="message__text">
       <p>Wpisz swoją wiadomość</p>
       <textarea
+        onChange={updateFieled}
         name="message"
         id=""
         cols="30"

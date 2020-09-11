@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 
-const Person = () => {
+const Person = ({ updateFieled }) => {
   return (
     <div className="person">
       <div>
         <p>Wpisz swoje imię</p>
-        <input type="text" placeholder="Krzysztof" />
+        <input
+          onChange={updateFieled}
+          type="text"
+          name="name"
+          placeholder="Krzysztof"
+        />
       </div>
       <div>
         <p>Wpisz swój email</p>
-        <input type="text" placeholder="abc@xyz.pl" />
+        <input
+          onChange={updateFieled}
+          type="email"
+          name="email"
+          placeholder="abc@xyz.pl"
+        />
       </div>
     </div>
   );
