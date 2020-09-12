@@ -10,7 +10,10 @@ const Message = ({ updateFieled, errorMessage }) => {
         id=""
         cols="30"
         rows="10"
-        placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nesciunt placeat veritatis deserunt voluptatibus. Voluptates aliquid autem sit labore quos consectetur debitis illo perferendis pariatur hic, delectus aperiam provident quaerat quibusdam enim"
+        placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Itaque nesciunt placeat veritatis deserunt voluptatibus. Voluptates aliquid autem 
+        sit labore quos consectetur debitis illo perferendis pariatur hic, delectus 
+        aperiam provident quaerat quibusdam enim"
       ></textarea>
       <div className="errorStyle">{errorMessage}</div>
     </div>
