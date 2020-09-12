@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Person = ({ updateFieled }) => {
+const Person = ({ updateFieled, error }) => {
   return (
     <div className="person">
       <div>
@@ -11,6 +11,7 @@ const Person = ({ updateFieled }) => {
           name="name"
           placeholder="Krzysztof"
         />
+        <div className="errorStyle">{error}</div>
       </div>
       <div>
         <p>Wpisz swój email</p>
