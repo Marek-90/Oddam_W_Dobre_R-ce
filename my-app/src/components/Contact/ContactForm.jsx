@@ -24,15 +24,13 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="contactForm">
-        <h2>Skontaktuj się z nami</h2>
-        <img className="goHelp__img" src={Decoration} alt="Decoration" />
-        <Person updateFieled={updateFieled} />
-        <Message updateFieled={updateFieled} />
-        <div className="contact__btn-position">
-          <button className="contact__btn">Wyślij</button>
-        </div>
+    <form onSubmit={handleSubmit} className="contactForm">
+      <h2>Skontaktuj się z nami</h2>
+      <img className="goHelp__img" src={Decoration} alt="Decoration" />
+      <Person updateFieled={updateFieled} />
+      <Message updateFieled={updateFieled} />
+      <div className="contact__btn-position">
+        <button className="contact__btn">Wyślij</button>
       </div>
     </form>
   );

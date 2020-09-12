@@ -7,10 +7,10 @@ const StepThree = () => {
     <>
       <Link to="/logowanie" className="stepOne">
         <img className="step__img-size" src={Icon3} alt="icon3" />
-        <p className="step__title">
+        <div className="step__title">
           <p>Zdecyduj komu</p>
           <p> chcesz pomóc</p>
-        </p>
+        </div>
         <p>wybierz zaufane</p>
         <p>miejsce</p>
       </Link>
