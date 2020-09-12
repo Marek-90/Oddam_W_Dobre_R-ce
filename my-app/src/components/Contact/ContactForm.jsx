@@ -4,7 +4,10 @@ import Message from "./Message";
 import Decoration from "../../assets/Decoration.svg";
 
 const ContactForm = () => {
-  const [error, setError] = useState(null);
+  const [errorName, setErrorName] = useState(null);
+  const [errorEmail, setErrorEmail] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -49,12 +52,12 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const errorName = validateName(data);
-    const errorEmail = validateEmail(data);
-    const errorMsg = validateMessage(data);
-    if (errorName) {
-      setError(errorName);
-      console.log("blad");
+    const errorNameV = validateName(data);
+    const errorEmailV = validateEmail(data);
+    const errorMsgV = validateMessage(data);
+    if (errorNameV && errorEmailV) {
+      setErrorName(errorNameV);
+      setErrorEmail(errorEmailV);
       return;
     }
   };
@@ -63,8 +66,12 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit} className="contactForm">
       <h2>Skontaktuj się z nami</h2>
       <img className="goHelp__img" src={Decoration} alt="Decoration" />
-      <Person updateFieled={updateFieled} error={error} />
-      <Message updateFieled={updateFieled} error={error} />
+      <Person
+        updateFieled={updateFieled}
+        errorName={errorName}
+        errorEmail={errorEmail}
+      />
+      <Message updateFieled={updateFieled} />
       <div className="contact__btn-position">
         <button className="contact__btn">Wyślij</button>
       </div>
