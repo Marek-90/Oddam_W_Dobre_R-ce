@@ -7,16 +7,16 @@ const ContactForm = () => {
   const [errorName, setErrorName] = useState(null);
   const [errorEmail, setErrorEmail] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
-
   const [data, setData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const reg = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
+  const reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   const validateName = (data) => {
+    setErrorName(null);
     if (!data.name) {
       return "Imię jest wymagane";
     } else if (data.name.length < 2) {
@@ -26,6 +26,7 @@ const ContactForm = () => {
   };
 
   const validateEmail = (data) => {
+    setErrorEmail(null);
     if (!data.email) {
       return "E-mail jest wymagany";
     } else if (!reg.test(data.email)) {
@@ -35,6 +36,7 @@ const ContactForm = () => {
   };
 
   const validateMessage = (data) => {
+    setErrorMessage(null);
     if (!data.message) {
       return "Brak wiadomości";
     } else if (data.message.length < 120) {
@@ -52,13 +54,19 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const errorNameV = validateName(data);
     const errorEmailV = validateEmail(data);
     const errorMsgV = validateMessage(data);
-    if (errorNameV && errorEmailV) {
+
+    if (errorNameV) {
       setErrorName(errorNameV);
+    }
+    if (errorEmailV) {
       setErrorEmail(errorEmailV);
-      return;
+    }
+    if (errorMsgV) {
+      setErrorMessage(errorMsgV);
     }
   };
 
@@ -71,7 +79,7 @@ const ContactForm = () => {
         errorName={errorName}
         errorEmail={errorEmail}
       />
-      <Message updateFieled={updateFieled} />
+      <Message updateFieled={updateFieled} errorMessage={errorMessage} />
       <div className="contact__btn-position">
         <button className="contact__btn">Wyślij</button>
       </div>

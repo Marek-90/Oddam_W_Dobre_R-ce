@@ -17,9 +17,10 @@ const Person = ({ updateFieled, errorName, errorEmail }) => {
         <p>Wpisz swój email</p>
         <input
           onChange={updateFieled}
-          type="email"
+          type="text"
           name="email"
           placeholder="abc@xyz.pl"
+          required={false}
         />
         <div className="errorStyle">{errorEmail}</div>
       </div>
