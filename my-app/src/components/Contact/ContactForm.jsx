@@ -7,6 +7,7 @@ const ContactForm = () => {
   const [errorName, setErrorName] = useState(null);
   const [errorEmail, setErrorEmail] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [formCom, setFormCom] = useState(null);
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -79,23 +80,37 @@ const ContactForm = () => {
 
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", option)
       .then((response) => response.json())
-      .then((json) => console.log(json));
+      .then((json) => {
+        if (json.status === "success") {
+          console.log("dupa dupa");
+          setFormCom("success");
+        } else {
+          console.log("dupa");
+          setFormCom("error");
+        }
+      });
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contactForm">
-      <h2>Skontaktuj się z nami</h2>
-      <img className="goHelp__img" src={Decoration} alt="Decoration" />
-      <Person
-        updateFieled={updateFieled}
-        errorName={errorName}
-        errorEmail={errorEmail}
-      />
-      <Message updateFieled={updateFieled} errorMessage={errorMessage} />
-      <div className="contact__btn-position">
-        <button className="contact__btn">Wyślij</button>
-      </div>
-    </form>
+    <>
+      {formCom === "success" ? (
+        <div>Dziękujemy za wysłanie formularza</div>
+      ) : (
+        <form onSubmit={handleSubmit} className="contactForm">
+          <h2>Skontaktuj się z nami</h2>
+          <img className="goHelp__img" src={Decoration} alt="Decoration" />
+          <Person
+            updateFieled={updateFieled}
+            errorName={errorName}
+            errorEmail={errorEmail}
+          />
+          <Message updateFieled={updateFieled} errorMessage={errorMessage} />
+          <div className="contact__btn-position">
+            <button className="contact__btn">Wyślij</button>
+          </div>
+        </form>
+      )}
+    </>
   );
 };
 
