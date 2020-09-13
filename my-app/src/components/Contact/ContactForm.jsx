@@ -30,7 +30,7 @@ const ContactForm = () => {
     if (!data.email) {
       return "E-mail jest wymagany";
     } else if (!reg.test(data.email)) {
-      return "Zły e-mail";
+      return "Niepoprawny e-mail";
     }
     return null;
   };
@@ -38,7 +38,7 @@ const ContactForm = () => {
   const validateMessage = (data) => {
     setErrorMessage(null);
     if (!data.message) {
-      return "Brak wiadomości";
+      return "Wiadomoś jest wymagana";
     } else if (data.message.length < 120) {
       return "Wiadomość jest za krótka";
     }
