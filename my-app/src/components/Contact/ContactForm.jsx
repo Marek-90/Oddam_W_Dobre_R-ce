@@ -68,6 +68,18 @@ const ContactForm = () => {
     if (errorMsgV) {
       setErrorMessage(errorMsgV);
     }
+
+    const option = {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", option)
+      .then((response) => response.json())
+      .then((json) => console.log(json));
   };
 
   return (
