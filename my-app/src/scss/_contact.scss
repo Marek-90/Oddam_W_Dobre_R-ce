@@ -11,8 +11,6 @@
     width: 98.8vw;
 }
 
-
-
 .contact__form {
     height: 96%;
     display: flex;
@@ -59,8 +57,6 @@
     }
 }
 
-
-
 input {
     border-top: none;
     border-left: none;
@@ -68,6 +64,7 @@ input {
     width: 14vw;
     font-family: $font-base;
     font-size: 1.125rem;
+    background: none;
 }
 
 .contact__btn {
