@@ -82,10 +82,8 @@ const ContactForm = () => {
       .then((response) => response.json())
       .then((json) => {
         if (json.status === "success") {
-          console.log("dupa dupa");
           setFormCom("success");
         } else {
-          console.log("dupa");
           setFormCom("error");
         }
       });
@@ -107,6 +105,7 @@ const ContactForm = () => {
           <Message updateFieled={updateFieled} errorMessage={errorMessage} />
           <div className="contact__btn-position">
             <button className="contact__btn">Wyślij</button>
+            {formCom === "error" && <div>Coś poszło nie tak</div>}
           </div>
         </form>
       )}
