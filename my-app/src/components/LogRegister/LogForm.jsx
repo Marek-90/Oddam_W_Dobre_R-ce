@@ -25,8 +25,23 @@ const LogForm = () => {
     }
   };
 
+  const handlerSubmit = (e) => {
+    e.preventDefault();
+
+    const errorEmailS = supportEmail(data);
+    const errorPasswordS = supportPassword(data);
+
+    if (errorEmailS) {
+      setlogEmailError(errorEmailS);
+    }
+
+    if (errorPasswordS) {
+      setLogPasswordError(errorPasswordS);
+    }
+  };
+
   return (
-    <div className="logForm">
+    <form onSubmit={handlerSubmit} className="logForm">
       <h1 className="logForm__title">Zaloguj się</h1>
       <img className="goHelp__img" src={Decoration} alt="Decoration" />
       <LogFormInput
@@ -35,11 +50,11 @@ const LogForm = () => {
       />
       <div>
         <div className="logForm__btn">
-          <button>Zaloguj się</button>
+          <button onSubmit>Zaloguj się</button>
           <Link to="/rejestracja">Załóż konto</Link>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
