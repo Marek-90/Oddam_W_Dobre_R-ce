@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
-const LogFormInput = () => {
-  const [logEmailError, setlogEmailError] = useState(null);
-  const [logPasswordError, setLogPasswordError] = useState(null);
-
+const LogFormInput = ({ logEmailError, logPasswordError }) => {
   return (
     <div className="logFormInput">
       <p className="logFormInput__input">Email</p>
